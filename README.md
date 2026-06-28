@@ -59,4 +59,4 @@ An inventory management system for efficiently managing products, stock levels, 
 
 ---
 
-⭐ If you like this project, don't forget to give it a Star!
+⭐ If you like this project, don't forget to star the repository!
