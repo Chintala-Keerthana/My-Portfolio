@@ -1,0 +1,61 @@
+/* Base interactive transitions */
+a, button {
+  transition: all var(--transition-fast);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-hover);
+}
+
+/* Page Glow Elements */
+.glow-bg {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0, 242, 254, 0.08) 0%, rgba(129, 140, 248, 0.03) 50%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Common Section Styles */
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Highlight tags/chips */
+.tech-tag {
+  display: inline-block;
+  padding: 5px 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  color: var(--primary);
+  border-radius: 20px;
+  transition: var(--transition-fast);
+}
+
+.tech-tag:hover {
+  background: rgba(0, 242, 254, 0.1);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
