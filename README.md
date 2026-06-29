@@ -54,7 +54,7 @@ An inventory management system for efficiently managing products, stock levels, 
 **Chintala Keerthana**
 
 * GitHub: https://github.com/Chintala-Keerthana
-* Portfolio: https://my-portfolio-lilac-ten-17.vercel.app/
+* Portfolio:https://keerthi-portfolio-2026.vercel.app/
 
 ---
 
