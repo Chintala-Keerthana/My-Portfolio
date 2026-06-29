@@ -4,7 +4,7 @@ A modern and responsive personal portfolio website showcasing my skills, project
 
 ## 🚀 Live Demo
 
-🔗 **Portfolio:** https://my-portfolio-lilac-ten-17.vercel.app/
+🔗 **Portfolio:** https://keerthi-portfolio-2026.vercel.app/
 
 ## 📌 Features
 
@@ -16,7 +16,6 @@ A modern and responsive personal portfolio website showcasing my skills, project
 * 📂 Projects Showcase
 * 📄 Resume Download
 * 📞 Contact Form
-* 📱 Mobile Friendly
 
 ## 🛠️ Tech Stack
 
