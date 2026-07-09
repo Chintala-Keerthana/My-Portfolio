@@ -1,0 +1,39 @@
+.certifications{
+    padding:80px 10%;
+}
+
+.certifications h2{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.certifications-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.certificate-card{
+    padding:25px;
+    border-radius:15px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.1);
+    transition:.3s;
+}
+
+.certificate-card:hover{
+    transform:translateY(-8px);
+}
+
+.certificate-card h3{
+    margin-bottom:10px;
+}
+
+.certificate-card p{
+    color:#8a63ff;
+    margin-bottom:10px;
+}
+
+.certificate-card span{
+    color:#bbb;
+}
