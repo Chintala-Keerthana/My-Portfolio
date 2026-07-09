@@ -2,20 +2,57 @@ import "./About.css";
 
 const skillCategories = [
   {
+    title: "💻 Programming Languages",
+    skills: ["Java", "Python", "JavaScript", "SQL"],
+  },
+  {
     title: "🎨 Frontend",
-    skills: ["React", "HTML5", "CSS3", "JavaScript"],
+    skills: [
+      "React.js",
+      "Vite",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Responsive Design",
+    ],
   },
   {
     title: "⚡ Backend",
-    skills: ["Node.js", "Express"],
+    skills: [
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "JWT Authentication",
+      "Socket.io",
+    ],
   },
   {
-    title: "💾 Database",
-    skills: ["MySQL"],
+    title: "💾 Databases",
+    skills: ["MySQL", "Oracle Database"],
   },
   {
-    title: "🛠️ Tools",
-    skills: ["Git", "GitHub", "VS Code"],
+    title: "🛠️ Tools & Platforms",
+    skills: [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Eclipse IDE",
+      "Apache Tomcat",
+      "Vercel",
+      "Render",
+      "Streamlit",
+    ],
+  },
+  {
+    title: "📚 Libraries & Frameworks",
+    skills: [
+      "JSP",
+      "Servlets",
+      "JDBC",
+      "Scikit-learn",
+      "Pandas",
+      "NumPy",
+    ],
   },
 ];
 
@@ -29,29 +66,41 @@ function About() {
       <div className="about-grid">
         <div className="about-bio" data-aos="fade-right">
           <h3>My Story</h3>
+
           <p>
-            Hello! I'm <strong>Chintala Keerthana</strong>, an aspiring Full Stack
-            Developer with a passion for building clean, responsive, and scalable
-            web applications. I enjoy turning ideas into functional, user-friendly
-            solutions while continuously learning modern technologies and industry
-            best practices.
+            Hello! I'm <strong>Chintala Keerthana</strong>, a Computer Science and
+            Engineering student with a strong interest in Full Stack Development,
+            Java Development, and Software Engineering. I enjoy building
+            responsive, scalable, and user-friendly web applications that solve
+            real-world problems.
           </p>
+
           <p>
-            My goal is to develop applications that solve real-world problems and provide
-            smooth, intuitive user interfaces. I love collaborating, coding, and keeping
-            up with current design methodologies.
+            I have hands-on experience with React.js, Node.js, Express.js,
+            MySQL, Java, Machine Learning, and REST API development through
+            academic projects and internships. I continuously improve my skills
+            by working on real-world applications and exploring modern software
+            development technologies.
+          </p>
+
+          <p>
+            I'm currently seeking opportunities where I can contribute,
+            collaborate with development teams, and grow as a Software
+            Developer while building impactful applications.
           </p>
         </div>
 
         <div className="about-skills" data-aos="fade-left">
           <h3>Skills & Technologies</h3>
+
           <div className="skills-grid">
-            {skillCategories.map((cat, idx) => (
-              <div className="skill-category" key={idx}>
-                <h4>{cat.title}</h4>
+            {skillCategories.map((category, index) => (
+              <div className="skill-category" key={index}>
+                <h4>{category.title}</h4>
+
                 <div className="skill-badges">
-                  {cat.skills.map((skill, sIdx) => (
-                    <span className="skill-badge" key={sIdx}>
+                  {category.skills.map((skill, skillIndex) => (
+                    <span className="skill-badge" key={skillIndex}>
                       {skill}
                     </span>
                   ))}
