@@ -3,56 +3,37 @@ import "./About.css";
 const skillCategories = [
   {
     title: "💻 Programming Languages",
-    skills: ["Java", "Python", "JavaScript", "SQL"],
+    skills: ["Java", "Python", "JavaScript"],
   },
   {
     title: "🎨 Frontend",
-    skills: [
-      "React.js",
-      "Vite",
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "Responsive Design",
-    ],
+    skills: ["HTML", "CSS", "React.js"],
   },
   {
     title: "⚡ Backend",
-    skills: [
-      "Node.js",
-      "Express.js",
-      "REST APIs",
-      "JWT Authentication",
-      "Socket.io",
-    ],
+    skills: ["Node.js", "Express.js"],
   },
   {
     title: "💾 Databases",
-    skills: ["MySQL", "Oracle Database"],
+    skills: ["MySQL", "Oracle SQL"],
   },
   {
-    title: "🛠️ Tools & Platforms",
+    title: "📚 Core Concepts",
     skills: [
-      "Git",
-      "GitHub",
-      "VS Code",
-      "Eclipse IDE",
-      "Apache Tomcat",
-      "Vercel",
-      "Render",
-      "Streamlit",
-    ],
-  },
-  {
-    title: "📚 Libraries & Frameworks",
-    skills: [
-      "JSP",
-      "Servlets",
+      "OOP",
       "JDBC",
-      "Scikit-learn",
-      "Pandas",
-      "NumPy",
+      "Servlets",
+      "REST APIs",
+      "JWT Authentication",
     ],
+  },
+  {
+    title: "🔧 Version Control",
+    skills: ["Git", "GitHub"],
+  },
+  {
+    title: "🛠️ Development Tools",
+    skills: ["VS Code", "Eclipse", "Apache Tomcat"],
   },
 ];
 
