@@ -43,7 +43,6 @@ function App() {
       <About />
       <Experience />
       <Projects />
-      <Certifications />
       <Contact />
       <Footer />
     </>
