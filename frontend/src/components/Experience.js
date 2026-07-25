@@ -16,12 +16,19 @@ const experiences = [
       "Worked on Java-based projects, REST APIs, and software engineering concepts through hands-on assignments and guided learning.",
   },
   {
-    role: "Web Development Virtual Internship",
+    role: "Full Stack Development Virtual Internship",
     company: "Thiranex",
-    duration: "2026 (Ongoing)",
+    duration: "2026",
     description:
       "Building full-stack web applications using React.js, Node.js, Express.js, and MySQL with authentication and deployment.",
   },
+  {
+  role: "Full Stack Web Development Intern",
+  company: "CODTECH IT Solutions",
+  duration: "2026",
+  description:
+    "Developing full-stack web applications using React.js, Node.js, Express.js, and MySQL. Working on REST APIs, authentication, database integration, and GitHub-based project management.",
+ },
 ];
 
 function Experience() {
