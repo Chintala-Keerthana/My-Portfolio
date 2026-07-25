@@ -45,6 +45,26 @@ const fallbackProjects = [
     live_link:
       "https://keerthi-task-manager.vercel.app/",
   },
+  {
+  title: "🛒 E-Commerce Web Application",
+  description:
+    "A modern full-stack e-commerce platform with user authentication, product management, shopping cart, wishlist, checkout, and responsive design.",
+  technologies:
+    "React.js, Vite, Node.js, Express.js, MySQL, JWT Authentication, HTML, CSS, JavaScript",
+  github_link:
+    "https://github.com/Chintala-Keerthana/E-Commerce-Web-Application",
+  live_link:
+    "https://thiran-shop.vercel.app/shop",
+  },
+  {
+    title: "📝 Blog Platform",
+    description:
+      "A full-stack blogging platform where users can register, log in, create, edit, and delete blog posts with JWT authentication. Features include comments, responsive UI, and secure REST APIs.",
+    technologies:
+      "React.js, Vite, Node.js, Express.js, MySQL, JWT Authentication, HTML, CSS, JavaScript",
+    github_link:
+      "https://github.com/Chintala-Keerthana/Blog-Platform"
+  },
 ];
 
 function Projects() {
@@ -79,6 +99,7 @@ function Projects() {
             >
               <div className="project-content">
                 <h3>{project.title}</h3>
+
                 <p>{project.description}</p>
 
                 <div className="project-tags">
