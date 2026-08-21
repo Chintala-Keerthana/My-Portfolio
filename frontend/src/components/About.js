@@ -18,10 +18,6 @@ const skillCategories = [
     skills: ["MySQL", "Oracle Database"],
   },
   {
-    title: "🧠 AI / Machine Learning",
-    skills: ["Scikit-learn", "Streamlit", "Pandas", "NumPy"],
-  },
-  {
     title: "🛠️ Developer Tools & Concepts",
     skills: ["Git", "GitHub", "JWT Authentication", "OOP", "VS Code", "Eclipse", "Apache Tomcat"],
   },
