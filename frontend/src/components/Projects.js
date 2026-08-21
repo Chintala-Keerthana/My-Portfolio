@@ -5,18 +5,19 @@ const fallbackProjects = [
   {
     title: "📚 Library Management System",
     description:
-      "A web-based Library Management System developed using Java, JSP, Servlets, Oracle Database, and Apache Tomcat for managing books, users, and library operations efficiently.",
+      "A web-based Library Management System with admin authentication, CRUD operations, and efficient book management. The application uses Java, JSP, Servlets, JDBC, Oracle Database, and Apache Tomcat for reliable backend functionality and deployment.",
     technologies:
-      "Java, JSP, Servlets, JDBC, Oracle Database, HTML, CSS, Bootstrap Icons, Apache Tomcat",
+      "Java, JSP, Servlets, JDBC, Oracle Database, HTML, CSS, Bootstrap, Apache Tomcat",
     github_link:
       "https://github.com/Chintala-Keerthana/Library-Management-System",
     live_link:
       "https://www.linkedin.com/posts/chintala-keerthana-916668321_java-jsp-servlets-ugcPost-7475776298372521984-xgEA/?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAFFu-SIBihBX_NagXMzVqi29kWx1YTaExo4",
   },
+
   {
     title: "🎓 Student Placement Predictor",
     description:
-      "A Machine Learning application that predicts a student's placement chances using academic and skill data.",
+      "A Machine Learning web application that predicts student placement outcomes based on academic and relevant student features. It includes data preprocessing, model training, prediction, and an interactive dashboard for real-time placement probability analysis.",
     technologies:
       "Python, Scikit-learn, Streamlit, Pandas, NumPy",
     github_link:
@@ -24,20 +25,22 @@ const fallbackProjects = [
     live_link:
       "https://student-placement-prediction-chintala-keerthana-2026.streamlit.app/",
   },
+
   {
     title: "📦 Inventra — Intelligent Warehouse Inventory Management System",
     description:
-      "A smart inventory management system that helps track, manage, and optimize stock levels using data-driven insights.",
+      "An intelligent warehouse inventory management system developed during Infosys Internship 6.0 to help track, manage, and monitor inventory efficiently. The project involved application development, testing, documentation, and troubleshooting.",
     technologies:
       "Java, SQL, Git, GitHub, Documentation & Testing",
     github_link:
       "https://github.com/Chintala-Keerthana/Inventra-Inventory-Management-System",
     live_link: "",
   },
+
   {
     title: "✅ Task Management Web Application",
     description:
-      "A full-stack Task Management application with secure JWT authentication, CRUD operations, search, filtering, priority management, dashboard statistics, and real-time updates using Socket.io.",
+      "A full-stack Task Management application with secure JWT authentication, CRUD operations, task prioritization, search, filtering, dashboard statistics, and real-time updates using Socket.io.",
     technologies:
       "React.js, Vite, Node.js, Express.js, MySQL, JWT Authentication, Socket.io, HTML, CSS, JavaScript",
     github_link:
@@ -45,25 +48,28 @@ const fallbackProjects = [
     live_link:
       "https://keerthi-task-manager.vercel.app/",
   },
+
   {
-  title: "🛒 E-Commerce Web Application",
-  description:
-    "A modern full-stack e-commerce platform with user authentication, product management, shopping cart, wishlist, checkout, and responsive design.",
-  technologies:
-    "React.js, Vite, Node.js, Express.js, MySQL, JWT Authentication, HTML, CSS, JavaScript",
-  github_link:
-    "https://github.com/Chintala-Keerthana/E-Commerce-Web-Application",
-  live_link:
-    "https://thiran-shop.vercel.app/shop",
-  },
-  {
-    title: "📝 Blog Platform",
+    title: "🛒 E-Commerce Web Application",
     description:
-      "A full-stack blogging platform where users can register, log in, create, edit, and delete blog posts with JWT authentication. Features include comments, responsive UI, and secure REST APIs.",
+      "A modern full-stack e-commerce platform featuring secure user authentication, product management, shopping cart, wishlist, checkout, and responsive user interfaces.",
     technologies:
       "React.js, Vite, Node.js, Express.js, MySQL, JWT Authentication, HTML, CSS, JavaScript",
     github_link:
-      "https://github.com/Chintala-Keerthana/Blog-Platform"
+      "https://github.com/Chintala-Keerthana/E-Commerce-Web-Application",
+    live_link:
+      "https://thiran-shop.vercel.app/shop",
+  },
+
+  {
+    title: "📝 Blog Platform",
+    description:
+      "A full-stack blogging platform where users can register, log in, create, edit, and delete blog posts using JWT authentication. The application also includes comments, responsive UI, and secure REST APIs.",
+    technologies:
+      "React.js, Vite, Node.js, Express.js, MySQL, JWT Authentication, HTML, CSS, JavaScript",
+    github_link:
+      "https://github.com/Chintala-Keerthana/Blog-Platform",
+    live_link: "",
   },
 ];
 
@@ -85,7 +91,9 @@ function Projects() {
           if (Array.isArray(project.technologies)) {
             tags = project.technologies;
           } else if (typeof project.technologies === "string") {
-            tags = project.technologies.split(",").map((t) => t.trim());
+            tags = project.technologies
+              .split(",")
+              .map((t) => t.trim());
           } else if (project.tags) {
             tags = project.tags;
           }
