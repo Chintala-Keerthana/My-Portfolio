@@ -105,7 +105,34 @@ function Projects() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    setProjects(fallbackProjects);
+    const fetchProjects = async () => {
+      try {
+        const response = await fetch("http://localhost:5000/api/projects");
+        if (response.ok) {
+          const apiProjects = await response.json();
+          if (Array.isArray(apiProjects) && apiProjects.length > 0) {
+            const merged = [...fallbackProjects];
+            apiProjects.forEach(apiProj => {
+              const cleanTitle = (apiProj.title || "").replace(/[^\w\s]/g, "").trim().toLowerCase();
+              const exists = merged.some(fallbackProj => {
+                const cleanFallback = (fallbackProj.title || "").replace(/[^\w\s]/g, "").trim().toLowerCase();
+                return cleanFallback === cleanTitle || cleanFallback.includes(cleanTitle) || cleanTitle.includes(cleanFallback);
+              });
+              if (!exists) {
+                merged.unshift(apiProj);
+              }
+            });
+            setProjects(merged);
+            return;
+          }
+        }
+      } catch (err) {
+        console.error("Failed to fetch projects from API, using fallback projects", err);
+      }
+      setProjects(fallbackProjects);
+    };
+
+    fetchProjects();
   }, []);
 
   return (

@@ -1,12 +1,12 @@
 .hero {
   position: relative;
-  min-height: 85vh;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 100px 5%;
-  background: radial-gradient(circle at 10% 20%, rgba(0, 242, 254, 0.05) 0%, rgba(3, 7, 18, 0) 50%),
-              radial-gradient(circle at 90% 80%, rgba(129, 140, 248, 0.08) 0%, rgba(3, 7, 18, 0) 60%);
+  background: radial-gradient(circle at 15% 25%, rgba(167, 139, 250, 0.06) 0%, rgba(3, 0, 20, 0) 50%),
+              radial-gradient(circle at 85% 75%, rgba(129, 140, 248, 0.08) 0%, rgba(3, 0, 20, 0) 60%);
   border-bottom: 1px solid var(--border-color);
   overflow: hidden;
 }
@@ -122,7 +122,7 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.2),
     transparent
   );
   transition: all 0.6s ease;
@@ -136,14 +136,14 @@
 /* Interactive & Noticeable Button Hover Effects */
 .btn.primary {
   background: var(--gradient-primary);
-  color: #030712;
-  box-shadow: 0 4px 15px rgba(0, 242, 254, 0.2);
+  color: #030014;
+  box-shadow: 0 4px 15px rgba(167, 139, 250, 0.25);
   border: 1px solid transparent;
 }
 
 .btn.primary:hover {
   transform: translateY(-4px) scale(1.03);
-  box-shadow: 0 10px 25px rgba(0, 242, 254, 0.45), var(--shadow-glow);
+  box-shadow: 0 10px 25px rgba(167, 139, 250, 0.45), var(--shadow-glow);
   filter: brightness(1.1);
 }
 
@@ -162,7 +162,7 @@
   background: rgba(255, 255, 255, 0.08);
   border-color: var(--primary);
   transform: translateY(-4px) scale(1.03);
-  box-shadow: 0 10px 25px rgba(0, 242, 254, 0.15);
+  box-shadow: 0 10px 25px rgba(167, 139, 250, 0.15);
 }
 
 .btn.secondary:active {
@@ -184,7 +184,7 @@
   box-shadow: 0 10px 25px rgba(129, 140, 248, 0.15);
 }
 
-/* Glowing Rotating Avatar Styles */
+/* Glowing Floating Avatar Styles */
 .hero-avatar-wrapper {
   position: relative;
   width: 320px;
@@ -193,6 +193,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: floatAvatar 6s ease-in-out infinite;
+}
+
+@keyframes floatAvatar {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
 }
 
 .avatar-glowing-circle {
@@ -221,8 +231,8 @@
   height: 95%;
   border-radius: 50%;
   overflow: hidden;
-  border: 4px solid #030712;
-  background: #111827;
+  border: 4px solid #030014;
+  background: #0f0c1e;
   z-index: 2;
   box-shadow: var(--shadow-lg);
   display: flex;
@@ -275,7 +285,7 @@
   .hero-avatar-wrapper {
     width: 280px;
     height: 280px;
-    order: -1; /* Display image on top in mobile layouts */
+    order: -1;
   }
 }
 

@@ -60,11 +60,13 @@
 }
 
 .tech-tag-mini.react {
-  background: rgba(0, 242, 254, 0.05);
+  background: rgba(167, 139, 250, 0.08);
   color: var(--primary);
+  border: 1px solid rgba(167, 139, 250, 0.15);
 }
 
 .tech-tag-mini.css {
-  background: rgba(129, 140, 248, 0.05);
+  background: rgba(129, 140, 248, 0.08);
   color: var(--secondary);
+  border: 1px solid rgba(129, 140, 248, 0.15);
 }

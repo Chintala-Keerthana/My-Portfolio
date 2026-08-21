@@ -1,39 +1,45 @@
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.25rem 5%;
-  background: rgba(3, 7, 18, 0.75);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border-color);
-  color: var(--text-primary);
   position: sticky;
   top: 0;
   z-index: 1000;
-  transition: var(--transition-normal);
+  background: rgba(3, 0, 20, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-color);
+  transition: all var(--transition-normal);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .logo {
   font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   font-weight: 800;
   background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   cursor: pointer;
   transition: var(--transition-fast);
 }
 
 .logo:hover {
   filter: brightness(1.2);
+  transform: scale(1.02);
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 2.25rem;
 }
 
 .nav-links a {
@@ -51,35 +57,89 @@
   color: var(--primary);
 }
 
-/* Underline slide effect on hover */
+/* Sliding hover line */
 .nav-links a::after {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
   width: 0;
   height: 2px;
   background: var(--gradient-primary);
-  transition: var(--transition-normal);
+  transition: all var(--transition-normal);
+  transform: translateX(-50%);
 }
 
 .nav-links a:hover::after {
   width: 100%;
 }
 
+/* Hamburger toggle styling */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+.hamburger-bar {
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-primary);
+  border-radius: 4px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Toggle menu transforms (to X icon) */
+.menu-toggle.open .hamburger-bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.open .hamburger-bar:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.menu-toggle.open .hamburger-bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    padding: 1rem 1.5rem;
-    gap: 0.75rem;
+  .menu-toggle {
+    display: flex;
   }
 
   .nav-links {
-    gap: 1.5rem;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: rgba(8, 4, 28, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-left: 1px solid var(--border-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
   }
 
-  .logo {
-    font-size: 1.3rem;
+  .nav-links.open {
+    right: 0;
+  }
+
+  .nav-links a {
+    font-size: 1.2rem;
+    font-weight: 600;
   }
 }

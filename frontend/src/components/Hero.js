@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./Hero.css";
 
-const words = ["Full Stack Developer", "Problem Solver"];
+const words = ["Full Stack Developer", "Java Developer", "Problem Solver"];
 
 function Hero() {
   const [currentWordIdx, setCurrentWordIdx] = useState(0);
