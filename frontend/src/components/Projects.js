@@ -1,3 +1,4 @@
+```jsx
 import { useEffect, useState } from "react";
 import "./Projects.css";
 
@@ -40,7 +41,7 @@ const fallbackProjects = [
   {
     title: "✅ Task Management Web Application",
     description:
-      "A full-stack Task Management application with secure JWT authentication, CRUD operations, task prioritization, search, filtering, dashboard statistics, and real-time updates using Socket.io.",
+      "A full-stack Task Management application developed during the Thiranex Full Stack Development Internship. It features secure JWT authentication, CRUD operations, task prioritization, search, filtering, dashboard statistics, and real-time updates using Socket.io.",
     technologies:
       "React.js, Vite, Node.js, Express.js, MySQL, JWT Authentication, Socket.io, HTML, CSS, JavaScript",
     github_link:
@@ -52,7 +53,7 @@ const fallbackProjects = [
   {
     title: "🛒 E-Commerce Web Application",
     description:
-      "A modern full-stack e-commerce platform featuring secure user authentication, product management, shopping cart, wishlist, checkout, and responsive user interfaces.",
+      "A modern full-stack e-commerce platform developed during the Thiranex Full Stack Development Internship. The application features secure user authentication, product management, shopping cart, wishlist, checkout, and responsive user interfaces.",
     technologies:
       "React.js, Vite, Node.js, Express.js, MySQL, JWT Authentication, HTML, CSS, JavaScript",
     github_link:
@@ -64,11 +65,44 @@ const fallbackProjects = [
   {
     title: "📝 Blog Platform",
     description:
-      "A full-stack blogging platform where users can register, log in, create, edit, and delete blog posts using JWT authentication. The application also includes comments, responsive UI, and secure REST APIs.",
+      "A full-stack blogging platform developed during the Thiranex Full Stack Development Internship. Users can register, log in, create, edit, and delete blog posts using JWT authentication. The application also includes comments, responsive UI, and secure REST APIs.",
     technologies:
       "React.js, Vite, Node.js, Express.js, MySQL, JWT Authentication, HTML, CSS, JavaScript",
     github_link:
       "https://github.com/Chintala-Keerthana/Blog-Platform",
+    live_link: "",
+  },
+
+  {
+    title: "🧠 Quiz Platform with Leaderboard",
+    description:
+      "A full-stack online quiz platform developed during the CodTech internship. The application allows users to participate in quizzes, track scores, and view leaderboard rankings through an interactive and responsive interface.",
+    technologies:
+      "React.js, Vite, Node.js, Express.js, MySQL, JWT Authentication, REST APIs, HTML, CSS, JavaScript",
+    github_link:
+      "https://github.com/Chintala-Keerthana/CodTech-Quiz-Platform",
+    live_link: "",
+  },
+
+  {
+    title: "👤 Personal CRM System",
+    description:
+      "A full-stack Personal CRM application developed during the CodTech internship for managing contacts and personal relationships efficiently. It provides structured contact management with a responsive interface and backend REST APIs.",
+    technologies:
+      "React.js, Vite, Node.js, Express.js, MySQL, JWT Authentication, REST APIs, HTML, CSS, JavaScript",
+    github_link:
+      "https://github.com/Chintala-Keerthana/Codtech-Personal-CRM-System",
+    live_link: "",
+  },
+
+  {
+    title: "🍳 Recipe Social Network",
+    description:
+      "A full-stack social recipe-sharing platform developed during the CodTech internship where users can create, explore, search, like, and comment on recipes. The application includes image uploads, authentication, filtering, pagination, and interactive social features.",
+    technologies:
+      "React.js, Vite, Node.js, Express.js, MySQL, JWT Authentication, Multer, REST APIs, HTML, CSS, JavaScript",
+    github_link:
+      "https://github.com/Chintala-Keerthana/Codtech-Recipe-Social-Network",
     live_link: "",
   },
 ];
