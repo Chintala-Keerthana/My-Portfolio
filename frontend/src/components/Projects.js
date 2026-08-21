@@ -102,7 +102,7 @@ const fallbackProjects = [
     technologies:
       "React.js, Vite, Node.js, Express.js, MySQL, JWT Authentication, Multer, REST APIs, HTML, CSS, JavaScript",
     github_link:
-      "https://github.com/Chintala-Keerthana/Codtech-Recipe-Social-Network",
+      "https://github.com/Chintala-Keerkeethana/Codtech-Recipe-Social-Network",
     live_link: "",
   },
 ];
@@ -191,3 +191,4 @@ function Projects() {
 }
 
 export default Projects;
+```
