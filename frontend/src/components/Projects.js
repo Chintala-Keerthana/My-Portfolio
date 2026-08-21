@@ -25,7 +25,17 @@ const fallbackProjects = [
     live_link:
       "https://student-placement-prediction-chintala-keerthana-2026.streamlit.app/",
   },
-
+    {
+    title: "🎓 College Discovery Platform",
+    description:
+      "A full-stack College Discovery and Comparison Platform that allows users to search, filter, compare, and explore colleges. It also includes a college predictor based on entrance exams and rank/percentile with dynamic recommendations fetched from PostgreSQL.",
+    technologies:
+      "Next.js, React, TypeScript, Prisma ORM, PostgreSQL, Tailwind CSS",
+    github_link:
+      "https://github.com/Chintala-Keerthana/College-Discovery-Platform",
+    live_link:
+      "https://college-discovery-platform-delta-eight.vercel.app/",
+  },
   {
     title: "📦 Inventra — Intelligent Warehouse Inventory Management System",
     description:
