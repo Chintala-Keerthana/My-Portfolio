@@ -1,4 +1,3 @@
-```jsx
 import { useEffect, useState } from "react";
 import "./Projects.css";
 
@@ -35,7 +34,6 @@ const fallbackProjects = [
       "Java, SQL, Git, GitHub, Documentation & Testing",
     github_link:
       "https://github.com/Chintala-Keerthana/Inventra-Inventory-Management-System",
-    live_link: "",
   },
 
   {
@@ -70,7 +68,6 @@ const fallbackProjects = [
       "React.js, Vite, Node.js, Express.js, MySQL, JWT Authentication, HTML, CSS, JavaScript",
     github_link:
       "https://github.com/Chintala-Keerthana/Blog-Platform",
-    live_link: "",
   },
 
   {
@@ -81,7 +78,6 @@ const fallbackProjects = [
       "React.js, Vite, Node.js, Express.js, MySQL, JWT Authentication, REST APIs, HTML, CSS, JavaScript",
     github_link:
       "https://github.com/Chintala-Keerthana/CodTech-Quiz-Platform",
-    live_link: "",
   },
 
   {
@@ -92,7 +88,6 @@ const fallbackProjects = [
       "React.js, Vite, Node.js, Express.js, MySQL, JWT Authentication, REST APIs, HTML, CSS, JavaScript",
     github_link:
       "https://github.com/Chintala-Keerthana/Codtech-Personal-CRM-System",
-    live_link: "",
   },
 
   {
@@ -102,8 +97,7 @@ const fallbackProjects = [
     technologies:
       "React.js, Vite, Node.js, Express.js, MySQL, JWT Authentication, Multer, REST APIs, HTML, CSS, JavaScript",
     github_link:
-      "https://github.com/Chintala-Keerkeethana/Codtech-Recipe-Social-Network",
-    live_link: "",
+      "https://github.com/Chintala-Keerthana/Codtech-Recipe-Social-Network",
   },
 ];
 
@@ -191,4 +185,3 @@ function Projects() {
 }
 
 export default Projects;
-```
