@@ -2,13 +2,6 @@ import "./Experience.css";
 
 const experiences = [
   {
-    role: "Web Development Internship",
-    company: "TopperRank",
-    duration: "2025",
-    description:
-      "Developed responsive web applications using HTML, CSS, JavaScript, and React.js while collaborating on real-world development tasks.",
-  },
-  {
     role: "Infosys Springboard Internship 6.0",
     company: "Infosys Springboard",
     duration: "2025 – 2026",
