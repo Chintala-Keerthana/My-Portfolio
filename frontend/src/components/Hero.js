@@ -57,7 +57,7 @@ function Hero() {
           <div className="hero-buttons">
             <a href="#projects" className="btn primary">View Projects</a>
             <a 
-              href="https://drive.google.com/file/d/1VIr0CpIi-n3k92_1ESmyTIviCrQJBRfg/view?usp=sharing" 
+              href="https://drive.google.com/file/d/1GiTRBTZjId16coeFZjcK64BZUTiYRXhw/view?usp=sharing" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn secondary"
